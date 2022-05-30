@@ -15,6 +15,7 @@
 		1CDF0D76284440C80008CEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDF0D74284440C80008CEFF /* LaunchScreen.storyboard */; };
 		1CDF0D7F284445D20008CEFF /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF0D7D284445D20008CEFF /* NextViewController.swift */; };
 		1CDF0D80284445D20008CEFF /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDF0D7E284445D20008CEFF /* NextViewController.xib */; };
+		1CDF0D822844491C0008CEFF /* CountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF0D812844491C0008CEFF /* CountManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1CDF0D77284440C80008CEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CDF0D7D284445D20008CEFF /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		1CDF0D7E284445D20008CEFF /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		1CDF0D812844491C0008CEFF /* CountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1CDF0D6D284440C30008CEFF /* ViewController.swift */,
 				1CDF0D6F284440C30008CEFF /* Main.storyboard */,
 				1CDF0D7D284445D20008CEFF /* NextViewController.swift */,
+				1CDF0D812844491C0008CEFF /* CountManager.swift */,
 				1CDF0D7E284445D20008CEFF /* NextViewController.xib */,
 				1CDF0D72284440C80008CEFF /* Assets.xcassets */,
 				1CDF0D74284440C80008CEFF /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				1CDF0D6E284440C30008CEFF /* ViewController.swift in Sources */,
 				1CDF0D7F284445D20008CEFF /* NextViewController.swift in Sources */,
 				1CDF0D6A284440C30008CEFF /* AppDelegate.swift in Sources */,
+				1CDF0D822844491C0008CEFF /* CountManager.swift in Sources */,
 				1CDF0D6C284440C30008CEFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
