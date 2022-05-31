@@ -19,18 +19,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b3e-nb-lqG">
                                 <rect key="frame" x="48" y="124" width="318" height="690"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-mg-ioZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="値を受け取っていません" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-mg-ioZ">
                                         <rect key="frame" x="0.0" y="0.0" width="318" height="345"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrP-A4-6ez">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrP-A4-6ez" userLabel="Show Next VC Button">
                                         <rect key="frame" x="0.0" y="345" width="318" height="345"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ShowNextVC"/>
                                         <connections>
-                                            <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdi-aq-Jj0"/>
+                                            <action selector="showNextVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYX-G8-r6W"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -45,6 +45,9 @@
                             <constraint firstItem="b3e-nb-lqG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="gZC-VS-Dzg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="Nx7-mg-ioZ" id="Cc9-wB-dZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
