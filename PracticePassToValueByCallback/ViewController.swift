@@ -9,18 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func didTapButton(_ sender: Any) {
-        showNextVC()
-    }
+    @IBOutlet weak var countLabel: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    private func showNextVC() {
-        let nextVC = NextViewController()
+    @IBAction func showNextVC(_ sender: Any) {
+        let nextVC = saveCountData()
         self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    private func saveCountData() -> NextViewController {
+        let nextVC = NextViewController()
+
+        nextVC.completion = { countManager in
+            self.countLabel.text = countManager.count.description
+        }
+        return nextVC
     }
 }
 
