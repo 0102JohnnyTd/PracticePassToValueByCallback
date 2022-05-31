@@ -9,16 +9,17 @@ import UIKit
 
 class NextViewController: UIViewController {
     private let countManager = CountManager()
+    var completion: ((CountManager) -> Void)?
+
     @IBOutlet weak var countLabel: UILabel!
     @IBAction func didTapButton(_ sender: Any) {
         countManager.increment()
         countLabel.text = countManager.count.description
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-
 }
