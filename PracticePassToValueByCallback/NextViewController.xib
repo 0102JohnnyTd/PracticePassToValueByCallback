@@ -40,6 +40,9 @@
                             <color key="tintColor" red="0.87278571100000002" green="0.0" blue="0.75290890440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                            <connections>
+                                <action selector="didTapCloseButton:" destination="-1" eventType="touchUpInside" id="daf-TH-EAc"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
