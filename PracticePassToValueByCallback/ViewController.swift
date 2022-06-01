@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     }
 
     private func saveCountData(nextVC: NextViewController) {
-        nextVC.completion = { countManager in
-            self.countLabel.text = countManager.count.description
+        nextVC.completion = {
+            self.countLabel.text = $0.count.description
         }
     }
 }
