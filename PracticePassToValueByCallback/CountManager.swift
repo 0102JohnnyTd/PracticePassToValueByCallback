@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CountManager {
+final class CountManager {
     private(set) var count = 0
 
     func increment() {

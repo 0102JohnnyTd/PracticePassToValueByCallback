@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NextViewController: UIViewController {
+final class NextViewController: UIViewController {
     private let countManager = CountManager()
     var completion: ((CountManager) -> Void)?
 

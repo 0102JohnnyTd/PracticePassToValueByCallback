@@ -7,8 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
 
     @IBAction func showNextVC(_ sender: Any) {
