@@ -32,7 +32,7 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Plus"/>
                             <connections>
-                                <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="mLL-Zu-2CP"/>
+                                <action selector="countPlus:" destination="-1" eventType="touchUpInside" id="4J0-d5-epZ"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzT-Ki-VsV" userLabel="Close Button">
@@ -41,7 +41,7 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Close"/>
                             <connections>
-                                <action selector="didTapCloseButton:" destination="-1" eventType="touchUpInside" id="daf-TH-EAc"/>
+                                <action selector="closeVC:" destination="-1" eventType="touchUpInside" id="ODo-Qh-Dkr"/>
                             </connections>
                         </button>
                     </subviews>

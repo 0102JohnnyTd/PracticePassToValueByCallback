@@ -12,21 +12,14 @@ class NextViewController: UIViewController {
     var completion: ((CountManager) -> Void)?
 
     @IBOutlet weak var countLabel: UILabel!
-    @IBAction func didTapButton(_ sender: Any) {
+
+    @IBAction func countPlus(_ sender: Any) {
         countManager.increment()
-        countLabel.text = countManager.count.description
-    }
-    @IBAction func didTapCloseButton(_ sender: Any) {
-        closeVC()
+            countLabel.text = countManager.count.description
     }
 
-    private func closeVC() {
+    @IBAction func closeVC(_ sender: Any) {
         completion?(countManager)
         dismiss(animated: true, completion: nil)
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }
