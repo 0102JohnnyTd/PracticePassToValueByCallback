@@ -12,17 +12,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
 
     @IBAction func showNextVC(_ sender: Any) {
-        let nextVC = saveCountData()
+        let nextVC = NextViewController()
+        saveCountData(nextVC: nextVC)
         self.present(nextVC, animated: true, completion: nil)
     }
-    
-    private func saveCountData() -> NextViewController {
-        let nextVC = NextViewController()
 
+    private func saveCountData(nextVC: NextViewController) {
         nextVC.completion = { countManager in
             self.countLabel.text = countManager.count.description
         }
-        return nextVC
     }
 }
 
