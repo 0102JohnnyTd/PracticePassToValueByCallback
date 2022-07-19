@@ -11,14 +11,14 @@ final class NextViewController: UIViewController {
     private let countManager = CountManager()
     var completion: ((CountManager) -> Void)?
 
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet private weak var countLabel: UILabel!
 
-    @IBAction func countPlus(_ sender: Any) {
+    @IBAction private func countPlus(_ sender: Any) {
         countManager.increment()
             countLabel.text = countManager.count.description
     }
 
-    @IBAction func closeVC(_ sender: Any) {
+    @IBAction private func closeVC(_ sender: Any) {
         completion?(countManager)
         dismiss(animated: true, completion: nil)
     }

@@ -8,9 +8,9 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet private weak var countLabel: UILabel!
 
-    @IBAction func showNextVC(_ sender: Any) {
+    @IBAction private func showNextVC(_ sender: Any) {
         let nextVC = NextViewController()
         saveCountData(nextVC: nextVC)
         self.present(nextVC, animated: true, completion: nil)
